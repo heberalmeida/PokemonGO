@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns/website#">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Aquí encontraras, noticias y horarios de eventos sobre el mundo de Pokemon GO, realizado por Comunidad Fly Oficial">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Comunidad Fly Oficial">
+    <meta property="og:image" content="https://i.ibb.co/MGZLns7/unova-pokemon.jpg">
+    <meta property="og:title" content="Noticias y eventos de Pokémon GO - Comunidad Fly Oficial">
+    <meta property="og:description" content="Aquí encontraras noticias y horarios de eventos sobre el mundo de Pokemon GO.">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:site" content="@DjkireYoutube">
+    <meta property="twitter:image" content="https://i.ibb.co/MGZLns7/unova-pokemon.jpg">
+    <meta property="twitter:title" content="Noticias y eventos de Pokémon GO - Comunidad Fly Oficial">
+    <meta property="twitter:description" content="Aquí encontraras noticias y horarios de eventos sobre el mundo de Pokemon GO.">
+    <title>Comunidad Fly Oficial</title>
+    <link rel="icon" type="image/png" href="imagen/logo_comunidad_fly.png">
+    <link rel="shortcut icon" href="https://comunidadflyoficial.github.io/PokemonGO/imagen/logo_comunidad_fly_oficial.ico">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="body">
+    <div class="loader" id="onload">
+        <img src="imagen/pikachu_loader.gif" alt="">
+        <img src="imagen/loader.gif" alt="">
+    </div>
+    <div class="overlay">
+        <main role="main" class="main">
+            <header>
+                <div>
+                    <img src="imagen/comunidad_fly_oficial_logo.jpg" alt="">
+                    <img class="logo" src="imagen/logo_comunidad.png" alt="">
+                </div>
+            </header>
+            <nav class="menu">
+                <!--<img class="menu_img" src="imagen/logo_comunidad.png" alt="Logo Comunidad Fly">-->
+                <div class="menu_nav" role="menu">
+                    <a class="menu_link" href="index.html"><img src="imagen/home.svg" alt="home"><span>INICIO</span></a>
+                    <a class="menu_link" href="farmplace.html"><img src="imagen/compass.svg" alt="Global"><span>LUGARES DE FARMEO</span></a>
+                    <a class="menu_link" href="communityday.html"><img src="imagen/confetti.svg" alt="Confetti"><span>COMMUNITY DAY</span></a>
+                    <a class="menu_link" href="raidhourreshiram2.html"><img src="imagen/clock.svg" alt="Calendar"><span>HORA LEGENDARIA</span></a>
+                    <a class="menu_link" id="click_submenu"><img src="imagen/more.svg" id="icon_event" alt="icon"><span>EVENTOS</span></a>
+                </div>
+                <div class="menu_submenu" id="submenu">
+                    <div>
+                        <h2 class="menu_submenu_title"><img src="imagen/Logo_PokemonGO.png" alt="Logo pokemon GO">EVENTOS DE JUNIO</h2>
+                        <a class="menu_submenu_link" href="campeonatodesafio.html"><img src="imagen/calendar.svg" alt="Calendar"><span>CAMPEONATO DESAFÍO RETORNO 2020</span></a> 
+                        <a class="menu_submenu_link" href="raidhourreshiram2.html"><img src="imagen/calendar.svg" alt="Calendar"><span>HORA LEGENDARIA DE RESHIRAM (3 DE JUNIO)</span></a> 
+                        <a class="menu_submenu_link" href="pokemonpatrat.html"><img src="imagen/calendar.svg" alt="Calendar"><span>HORA DESTACADA DE PATRAT (9 DE JUNIO)</span></a> 
+                        <a class="menu_submenu_link" href="raidhourreshiram3.html"><img src="imagen/calendar.svg" alt="Calendar"><span>HORA LEGENDARIA DE RESHIRAM (10 DE JUNIO)</span></a> 
+                        <a class="menu_submenu_link" href="pokemonnumel.html"><img src="imagen/calendar.svg" alt="Calendar"><span>HORA DESTACADA DE NUMEL (16 DE JUNIO)</span></a> 
+                        <a class="menu_submenu_link" href="raidhourzekrom1.html"><img src="imagen/calendar.svg" alt="Calendar"><span>HORA LEGENDARIA DE ZEKROM (17 DE JUNIO)</span></a> 
+                        <a class="menu_submenu_link" href="pokemonclefairy.html"><img src="imagen/calendar.svg" alt="Calendar"><span>HORA DESTACADA DE CLEFAIRY (23 DE JUNIO)</span></a> 
+                        <a class="menu_submenu_link" href="raidhourzekrom2.html"><img src="imagen/calendar.svg" alt="Calendar"><span>HORA LEGENDARIA DE ZEKROM (24 DE JUNIO)</span></a> 
+                        <a class="menu_submenu_link" href="pokemonkricketot.html"><img src="imagen/calendar.svg" alt="Calendar"><span>HORA DESTACADA DE KRICKETOT (30 DE JUNIO)</span></a> 
+                    </div>
+                    <div>
+                        <h2 class="menu_submenu_title"><img src="imagen/Logo_PokemonGO.png" alt="Logo pokemon GO">EVENTOS DE JULIO</h2>
+                        <a class="menu_submenu_link" href="raidhourzekrom3.html"><img src="imagen/calendar.svg" alt="Calendar"><span>HORA LEGENDARIA DE ZEKROM (1 DE JULIO)</span></a> 
+                    </div>
+                </div>
+            </nav>
+            <picture>
+                <img src="imagen/pokemon_go_fest_2020.jpg" style="display:block;width:100%;">
+            </picture>
+            <div class="events">
+                <div class="events_local">
+                    <h2 class="events_local_title"><span>EVENTOS POKEMON GO 2020</span></h2>
+                    <p>Hora Local</p>
+                    <p id="community_day">Obteniendo datos...</p>
+                    <p id="community_hour">Obteniendo datos...</p>
+                    <p>*La hora local se deriva de la hora de su smartphone/ PC / laptop.</p>
+                </div>
+            </div>
+            <video id="myVideo" style="display: block;width: 100%;" muted playsinline controlsList="nodownload">
+                <source src="video/elite_legendario_teselia.webm" type="video/webm">
+            </video>
+            <div class="block"  id="country_id">  
+                <h2 class="main_title">MISCELÁNEAS</h2>
+                <div class="block_overlay background_migracion" id="migracion">
+                    <div class="block_back">
+                        <h2 class="block_title">Migración de nidos</h2>
+                        <div class="block_info">
+                            <div>
+                                <div class="block_img migracion">
+                                </div>
+                                <div>
+                                    <p class="block_time_title">Migración N° 112:</p>
+                                    <p class="block_time_local" id="time_local_start_1">Obteniendo datos...</p>
+                                    <p class="block_time_title">Migración N° 113:</p>
+                                    <p class="block_time_local" id="time_local_end_1">Obteniendo datos...</p>
+                                </div>
+                            </div>
+                            <p class="block_time" id="time_1">Obteniendo datos...</p>
+                        </div>
+                    </div>
+                </div>    
+                <div class="block_overlay background_bonus_especial">
+                    <div class="block_back">
+                        <h2 class="block_title">Bonus especial por tiempo limitado</h2>
+                        <div class="block_info">
+                            <div>
+                                <div class="block_img bonus_especial">
+                                </div>
+                                <div>
+                                    <p class="block_time_title">Inicio:<button class="button_view">Ver +</button></p>
+                                    <p class="block_time_local" id="time_local_start_14">Obteniendo datos...</p>
+                                    <p class="block_time_title">Fin:</p>
+                                    <p class="block_time_local" id="time_local_end_14">Obteniendo datos...</p>
+                                </div>
+                            </div>
+                            <p class="block_time" id="time_14">Obteniendo datos...</p>
+                        </div>
+                    </div>
+                    <div class="block_country">
+                        <div class="country">
+                            <div>
+                                <p> 
+                                    <b>Bonus especial</b><br><br>
+                                    Entrenadores: <br>
+                                    En Pokémon GO aplicaremos los cambios siguientes, que serán efectivos por un tiempo limitado: <br>
+                                    <ul>
+                                        <li>El incienso durara una hora.</li>
+                                        <li>Incremento de la efectividad del incienso</li>
+                                        <li>Podras llevar el doble de regalos en tu mochila</li>
+                                        <li>Podras abrir hasta 30 regalos.</li>
+                                        <li>Se quitara el requerimiento de caminar para conseguir mas batallas en la GO battle league.</li>
+                                        <li>1/2 de distancia en la eclosion de huevos</li>
+                                        <li>Daño aumentado para los entrenadores que combatan en las incursiones remotas.</li>
+                                    </ul>
+                                </p>
+                            </div>
+                            <img src="imagen/bonus_especial.jpg" alt="">
+                        </div>
+                    </div>
+                </div>  
+                <div class="block_overlay background_investigacion_giovanni">
+                    <div class="block_back">
+                        <h2 class="block_title">Noticias sobre la investigación del Team GO Rocket</h2>
+                        <div class="block_info">
+                            <div>
+                                <div class="block_img investigacion_giovanni">
+                                </div>
+                                <div>
+                                    <p class="block_time_title">Inicio - Hora local:<button class="button_view">Ver +</button></p>
+                                    <p class="block_time_local" id="time_local_start_17">Obteniendo datos...</p>
+                                    <p class="block_time_title">Fin - Hora local:</p>
+                                    <p class="block_time_local" id="time_local_end_17">Obteniendo datos...</p>
+                                </div>
+                            </div>
+                            <p class="block_time" id="time_17">Obteniendo datos...</p>
+                        </div>
+                    </div>
+                    <div class="block_country">
+                        <div class="country">
+                            <div>
+                                <p> 
+                                    <b>Información de la investigación especial del Team GO Rocket</b><br><br>
+                                    Entrenadores: <br>
+                                    Parece que el Team GO Rocket está bastante tranquilo últimamente. Por eso, desde mayo y hasta finales de septiembre, no habrá nuevas investigaciones especiales del Team GO Rocket. El Profesor Willow y el equipo creen que esto es muy raro y seguirán investigando por si pudieran encontrar alguna pista. Esperemos que esto sea lo último que sepamos del Team GO Rocket, pero conociendo las capacidades de estos villanos, dudamos mucho que sea así. Estad atentos para conocer las novedades. Sinceramente no creemos que el Team GO Rocket vaya a estarse quietecito todo el verano...
+                                </p>
+                            </div>
+                            <img src="imagen/investigacion_gorocket_postergado.jpg" alt="">
+                        </div>
+                    </div>
+                </div>  
+                <h2 class="main_title">EVENTOS DE MAYO</h2>
+                <div class="block_overlay background_research_week">
+                    <div class="block_back">
+                        <h2 class="block_title">Logro de investigación de Mayo</h2>
+                        <div class="block_info">
+                            <div>
+                                <div class="block_img research_week">
+                                </div>
+                                <div>
+                                    <p class="block_time_title">Inicio:<button class="button_view">Ver +</button></p>
+                                    <p class="block_time_local" id="time_local_start_16">Obteniendo datos...</p>
+                                    <p class="block_time_title">Fin:</p>
+                                    <p class="block_time_local" id="time_local_end_16">Obteniendo datos...</p>
+                                </div>
+                            </div>
+                            <p class="block_time" id="time_16">Obteniendo datos...</p>
+                        </div>
+                    </div>
+                    <div class="block_country">
+                        <div class="country">
+                            <div>
+                                <p> 
+                                    <b>Encuentro del logro de investigación de mayo: ¡Shinx con Caramelos Shinx como bonus!</b><br><br>
+                                    Entrenadores: <br>
+                                    el Pokémon Flash, Shinx, aparecerá como encuentro del logro de investigación y vendrá con Caramelos Shinx de bonus.
+                                </p>
+                            </div>
+                            <img src="imagen/investigacion_mayo.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="block_overlay background_temporada2_super">
+                    <div class="block_back">
+                        <h2 class="block_title">Liga Combates GO Temp.02 - Super</h2>
+                        <div class="block_info">
+                            <div>
+                                <div class="block_img temporada2_super">
+                                </div>
+                                <div>
+                                    <p class="block_time_title">Inicio:<button class="button_view">Ver +</button></p>
+                                    <p class="block_time_local" id="time_local_start_7">Obteniendo datos...</p>
+                                    <p class="block_time_title">Fin:</p>
+                                    <p class="block_time_local" id="time_local_end_7">Obteniendo datos...</p>
+                                </div>
+                            </div>
+                            <p class="block_time" id="time_7">Obteniendo datos...</p>
+                        </div>
+                    </div>
+                    <div class="block_country">
+                        <div class="country">
+                            <img src="imagen/infografia_liga_super_fecha.jpg" alt="">
+                            <img src="imagen/infografia_liga_temp2_novedades.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="block_overlay background_sinnoh">
+                    <div class="block_back">
+                        <h2 class="block_title">Desafío Retorno 2020: Sinnoh</h2>
+                        <div class="block_info">
+                            <div>
+                                <div class="block_img sinnoh">
+                                </div>
+                                <div>
+                                    <p class="block_time_title">Inicio - Hora local:</p>
+                                    <p class="block_time_local">Vie, 22 de May - 13:00</p>
+                                    <p class="block_time_title">Fin - Hora local:</p>
+                                    <p class="block_time_local">Vie, 29 de May - 13:00</p>
+                                </div>
+                            </div>
+                            <p class="block_time"><a href="desafiosinnoh.html">VER HORARIOS...</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block_overlay background_raid_reshiram" id="raidreshiram">
+                    <div class="block_back">
+                        <h2 class="block_title">Reshiram, el Pokémon Blanco Veraz, llega a Pokémon GO!</h2>
+                        <div class="block_info">
+                            <div>
+                                <div class="block_img raid_reshiram"">
+                                </div>
+                                <div>
+                                    <p class="block_time_title">Inicio:<button class="button_view">Ver +</button></p>
+                                    <p class="block_time_local" id="time_local_start_18">Obteniendo datos...</p>
+                                    <p class="block_time_title">Fin:</p>
+                                    <p class="block_time_local" id="time_local_end_18">Obteniendo datos...</p>
+                                </div>
+                            </div>
+                            <p class="block_time" id="time_18">Obteniendo datos...</p>
+                        </div>
+                        <div class="block_country">
+                            <div class="country">
+                                <div>
+                                    <p> 
+                                        <b>Reshiram, el Pokémon Blanco Veraz, será el primero en llegar a Pokémon GO!</b><br><br>
+                                        Entrenadores: <br>
+                                        ¿Escucháis los tres rugidos draconianos a lo lejos? Uno pertenece a un Pokémon capaz de abrasar el mundo si la gente le da la espalda a la verdad. Otro pertenece a un Pokémon que puede arrasar reinos enteros con su electricidad si no se respetan los ideales. El rugido final pertenece a un Pokémon en cuyo interior habita un poder aún mayor encerrado en un frío extremo. <br><br>
+                                        Descubiertos originalmente en la región de Unova y vistos por Entrenadores por primera vez en Pokémon Negro y Pokémon Blanco, ¡los Pokémon Legendarios Reshiram, Zekrom y Kyurem harán su debut en las incursiones de cinco estrellas de Pokémon Go!<br><br>
+                                        Aseguraos de tener vuestros pases de incursión remota antes del martes 26 de mayo de 2020, día en el que Reshiram, el Pokémon Blanco Veraz, será el primero en llegar a Pokémon GO!<br>
+                                    </p>
+                                </div>
+                                <img src="imagen/infografia_reshiram.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="main_title">EVENTOS DE JUNIO</h2>
+                <div class="block_overlay background_mantenimiento" id="mantenimiento">
+                    <div class="block_back">
+                        <h2 class="block_title">Mantenimiento del Pokemon GO</h2>
+                        <div class="block_info">
+                            <div>
+                                <div class="block_img mantenimiento">
+                                </div>
+                                <div>
+                                    <p class="block_time_title">Inicio:<button class="button_view">Ver +</button></p>
+                                    <p class="block_time_local" id="time_local_start_2">Obteniendo datos...</p>
+                                    <p class="block_time_title">Fin:</p>
+                                    <p class="block_time_local" id="time_local_end_2">Obteniendo datos...</p>
+                                </div>
+                            </div>
+                            <p class="block_time" id="time_2">Obteniendo datos...</p>
+                        </div>
+                        <div class="block_country">
+                            <div class="country">
+                                <div>
+                                    <p> 
+                                        Entrenadores: <br>
+                                        Pokémon GO experimentará un tiempo de inactividad global durante siete horas el lunes 1 de junio de 2020. Alrededor de las 11 a.m. a las 6 p.m. PDT, el juego se someterá a mantenimiento del servidor y será inaccesible para todos los entrenadores. Nos disculpamos por cualquier inconveniente que esto pueda causar.
+                                    </p>
+                                </div>
+                                <img src="imagen/infografia_mantenimiento.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block_overlay background_research_week">
+                    <div class="block_back">
+                        <h2 class="block_title">Logro de investigación de Junio</h2>
+                        <div class="block_info">
+                            <div>
+                                <div class="block_img research_week">
+                                </div>
+                                <div>
+                                    <p class="block_time_title">Inicio:<button class="button_view">Ver +</button></p>
+                                    <p class="block_time_local" id="time_local_start_3">Obteniendo datos...</p>
+                                    <p class="block_time_title">Fin:</p>
+                                    <p class="block_time_local" id="time_local_end_3">Obteniendo datos...</p>
+                                </div>
+                            </div>
+                            <p class="block_time" id="time_3">Obteniendo datos...</p>
+                        </div>
+                    </div>
+                    <div class="block_country">
+                        <div class="country">
+                            <div>
+                                <p> 
+                                    <b>Encuentro del logro de investigación de junio: Trapinch con Caramelos Trapinch como bonus</b><br><br>
+                                    Entrenadores: <br>
+                                    Desde el lunes 1 de junio de 2020 a las 22:00 hasta el miércoles 1 de julio de 2020 a las 22:00 CEST (13:00 PDT), Trapinch, el Pokémon Hormigaleón, estará disponible como encuentro de logro de investigación.
+                                </p>
+                            </div>
+                            <img src="imagen/investigacion_junio.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="block_overlay background_temporada2_ultra" id="temp2ultra">
+                    <div class="block_back">
+                        <h2 class="block_title">Liga Combates GO Temp.02 - Ultra</h2>
+                        <div class="block_info">
+                            <div>
+                                <div class="block_img temporada2_ultra">
+                                </div>
+                                <div>
+                                    <p class="block_time_title">Inicio:<button class="button_view">Ver +</button></p>
+                                    <p class="block_time_local" id="time_local_start_8">Obteniendo datos...</p>
+                                    <p class="block_time_title">Fin:</p>
+                                    <p class="block_time_local" id="time_local_end_8">Obteniendo datos...</p>
+                                </div>
+                            </div>
+                            <p class="block_time" id="time_8">Obteniendo datos...</p>
+                        </div>
+                    </div>
+                    <div class="block_country">
+                        <div class="country">
+                            <img src="imagen/infografia_liga_ultra_fecha.jpg" alt="">
+                            <img src="imagen/infografia_liga_temp2_novedades.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="block_overlay background_campeonato">
+                    <div class="block_back">
+                        <h2 class="block_title">Campeonato Desafío Retorno 2020</h2>
+                        <div class="block_info">
+                            <div>
+                                <div class="block_img campeonato">
+                                </div>
+                                <div>
+                                    <p class="block_time_title">Inicio - Hora local:</p>
+                                    <p class="block_time_local">Mie, 3 de Jun - 13:00</p>
+                                    <p class="block_time_title">Fin - Hora local:</p>
+                                    <p class="block_time_local">Lun, 8 de Jun - 13:00</p>
+                                </div>
+                            </div>
+                            <p class="block_time"><a href="campeonatodesafio.html">VER HORARIOS...</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block_overlay background_raid_reshiram">
+                    <div class="block_back">
+                        <h2 class="block_title">Hora legendaria de Reshiram</h2>
+                        <div class="block_info">
+                            <div>
+                                <div class="block_img raid_reshiram"">
+                                </div>
+                                <div>
+                                    <p class="block_time_title">Inicio - Hora local:</p>
+                                    <p class="block_time_local">Mie, 3 de May - 18:00</p>
+                                    <p class="block_time_title">Fin - Hora local:</p>
+                                    <p class="block_time_local">Mie, 3 de May - 19:00</p>
+                                </div>
+                            </div>
+                            <p class="block_time"><a href="raidhourreshiram2.html">VER HORARIOS...</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block_overlay background_outstanding_pokemon_patrat">
+                    <div class="block_back">
+                        <h2 class="block_title">Hora destacada de Patrat</h2>
+                        <div class="block_info">
+                            <div>
+                                <div class="block_img outstanding_pokemon_patrat" style="background-position: right;">
+                                </div>
+                                <div>
+                                    <p class="block_time_title">Inicio - Hora local:</p>
+                                    <p class="block_time_local">Mar, 9 de Jun - 18:00</p>
+                                    <p class="block_time_title">Fin - Hora local:</p>
+                                    <p class="block_time_local">Mar, 9 de Jun - 19:00</p>
+                                </div>
+                            </div>
+                            <p class="block_time"><a href="pokemonpatrat.html">VER HORARIOS...</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block_overlay background_raid_reshiram">
+                    <div class="block_back">
+                        <h2 class="block_title">Hora legendaria de Reshiram</h2>
+                        <div class="block_info">
+                            <div>
+                                <div class="block_img raid_reshiram"">
+                                </div>
+                                <div>
+                                    <p class="block_time_title">Inicio - Hora local:</p>
+                                    <p class="block_time_local">Mie, 10 de May - 18:00</p>
+                                    <p class="block_time_title">Fin - Hora local:</p>
+                                    <p class="block_time_local">Mie, 10 de May - 19:00</p>
+                                </div>
+                            </div>
+                            <p class="block_time"><a href="raidhourreshiram3.html">VER HORARIOS...</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block_overlay background_raid_zekrom" id="raidzekrom">
+                    <div class="block_back">
+                        <h2 class="block_title">Zekrom llega como un rayo a Pokémon GO</h2>
+                        <div class="block_info">
+                            <div>
+                                <div class="block_img raid_zekrom">
+                                </div>
+                                <div>
+                                    <p class="block_time_title">Inicio:<button class="button_view">Ver +</button></p>
+                                    <p class="block_time_local" id="time_local_start_4">Obteniendo datos...</p>
+                                    <p class="block_time_title">Fin:</p>
+                                    <p class="block_time_local" id="time_local_end_4">Obteniendo datos...</p>
+                                </div>
+                            </div>
+                            <p class="block_time" id="time_4">Obteniendo datos...</p>
+                        </div>
+                        <div class="block_country">
+                            <div class="country">
+                                <div>
+                                    <p> 
+                                        <b>Zekrom llega como un rayo a Pokémon GO</b><br><br>
+                                        Entrenadores: <br>
+                                        Ya es casi la hora de poner a prueba vuestros ideales. A partir del martes 16 de junio de 2020 a las 22:00 CEST (13:00 PDT), Zekrom, el Pokémon Negro Puro, aguardará vuestro desafío en las incursiones de cinco estrellas. Además, habrá eventos de hora de incursiones con Zekrom todos los miércoles mientras aparezca en las incursiones de cinco estrellas.
+                                    </p>
+                                </div>
+                                <img src="imagen/infografia_zekrom.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block_overlay background_outstanding_pokemon_numel">
+                    <div class="block_back">
+                        <h2 class="block_title">Hora destacada de Numel</h2>
+                        <div class="block_info">
+                            <div>
+                                <div class="block_img outstanding_pokemon_numel" style="background-position: right;">
+                                </div>
+                                <div>
+                                    <p class="block_time_title">Inicio - Hora local:</p>
+                                    <p class="block_time_local">Mar, 16 de Jun - 18:00</p>
+                                    <p class="block_time_title">Fin - Hora local:</p>
+                                    <p class="block_time_local">Mar, 16 de Jun - 19:00</p>
+                                </div>
+                            </div>
+                            <p class="block_time"><a href="pokemonnumel.html">VER HORARIOS...</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block_overlay background_raid_zekrom">
+                    <div class="block_back">
+                        <h2 class="block_title">Hora legendaria de Zekrom</h2>
+                        <div class="block_info">
+                            <div>
+                                <div class="block_img raid_zekrom"">
+                                </div>
+                                <div>
+                                    <p class="block_time_title">Inicio - Hora local:</p>
+                                    <p class="block_time_local">Mie, 17 de Jun - 18:00</p>
+                                    <p class="block_time_title">Fin - Hora local:</p>
+                                    <p class="block_time_local">Mie, 17 de Jun - 19:00</p>
+                                </div>
+                            </div>
+                            <p class="block_time"><a href="raidhourzekrom1.html">VER HORARIOS...</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block_overlay background_solsticio">
+                    <div class="block_back">
+                        <h2 class="block_title">¡Celebra los solsticios con nosotros!</h2>
+                        <div class="block_info">
+                            <div>
+                                <div class="block_img solsticio">
+                                </div>
+                                <div>
+                                    <p class="block_time_title">Inicio - Hora local:</p>
+                                    <p class="block_time_local">Vie, 19 de Jun - 08:00</p>
+                                    <p class="block_time_title">Fin - Hora local:</p>
+                                    <p class="block_time_local">Mie, 24 de Jun - 22:00</p>
+                                </div>
+                            </div>
+                            <p class="block_time"><a>MÁS INFORMACIÓN PRONTO...</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block_overlay background_community_day">
+                    <div class="block_back">
+                        <h2 class="block_title">Día de la Comunidad de Junio - Weedle</h2>
+                        <div class="block_info">
+                            <div>
+                                <div class="block_img community_day weedle">
+                                </div>
+                                <div>
+                                    <p class="block_time_title">Inicio - Hora local:</p>
+                                    <p class="block_time_local">Sab, 20 de Jun - 11:00</p>
+                                    <p class="block_time_title">Fin - Hora local:</p>
+                                    <p class="block_time_local">Sab, 20 de Jun - 17:00</p>
+                                </div>
+                            </div>
+                            <p class="block_time"><a href="communityday.html">VER HORARIOS...</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block_overlay background_outstanding_pokemon_clefairy">
+                    <div class="block_back">
+                        <h2 class="block_title">Hora destacada de Clefairy</h2>
+                        <div class="block_info">
+                            <div>
+                                <div class="block_img outstanding_pokemon_clefairy" style="background-position: right;">
+                                </div>
+                                <div>
+                                    <p class="block_time_title">Inicio - Hora local:</p>
+                                    <p class="block_time_local">Mar, 23 de Jun - 18:00</p>
+                                    <p class="block_time_title">Fin - Hora local:</p>
+                                    <p class="block_time_local">Mar, 23 de Jun - 19:00</p>
+                                </div>
+                            </div>
+                            <p class="block_time"><a href="pokemonclefairy.html">VER HORARIOS...</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block_overlay background_bichear">
+                    <div class="block_back">
+                        <h2 class="block_title">¡Es hora de bichear!</h2>
+                        <div class="block_info">
+                            <div>
+                                <div class="block_img bichear">
+                                </div>
+                                <div>
+                                    <p class="block_time_title">Inicio - Hora local:</p>
+                                    <p class="block_time_local">Vie, 26 de Jun - 08:00</p>
+                                    <p class="block_time_title">Fin - Hora local:</p>
+                                    <p class="block_time_local">Mie, 1 de Jul - 22:00</p>
+                                </div>
+                            </div>
+                            <p class="block_time"><a>MÁS INFORMACIÓN PRONTO...</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block_overlay background_raid_zekrom">
+                    <div class="block_back">
+                        <h2 class="block_title">Hora legendaria de Zekrom</h2>
+                        <div class="block_info">
+                            <div>
+                                <div class="block_img raid_zekrom"">
+                                </div>
+                                <div>
+                                    <p class="block_time_title">Inicio - Hora local:</p>
+                                    <p class="block_time_local">Mie, 24 de Jun - 18:00</p>
+                                    <p class="block_time_title">Fin - Hora local:</p>
+                                    <p class="block_time_local">Mie, 24 de Jun - 19:00</p>
+                                </div>
+                            </div>
+                            <p class="block_time"><a href="raidhourzekrom2.html">VER HORARIOS...</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block_overlay background_temporada2_master" id="temp2master">
+                    <div class="block_back">
+                        <h2 class="block_title">Liga Combates GO Temp.02 - Master</h2>
+                        <div class="block_info">
+                            <div>
+                                <div class="block_img temporada2_master">
+                                </div>
+                                <div>
+                                    <p class="block_time_title">Inicio:<button class="button_view">Ver +</button></p>
+                                    <p class="block_time_local" id="time_local_start_9">Obteniendo datos...</p>
+                                    <p class="block_time_title">Fin:</p>
+                                    <p class="block_time_local" id="time_local_end_9">Obteniendo datos...</p>
+                                </div>
+                            </div>
+                            <p class="block_time" id="time_9">Obteniendo datos...</p>
+                        </div>
+                    </div>
+                    <div class="block_country">
+                        <div class="country">
+                            <img src="imagen/infografia_liga_master_fecha.jpg" alt="">
+                            <img src="imagen/infografia_liga_master_premier.jpg" alt="">
+                            <img src="imagen/infografia_liga_temp2_novedades.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="block_overlay background_outstanding_pokemon_kricketot">
+                    <div class="block_back">
+                        <h2 class="block_title">Hora destacada de Kricketot</h2>
+                        <div class="block_info">
+                            <div>
+                                <div class="block_img outstanding_pokemon_kricketot" style="background-position: right;">
+                                </div>
+                                <div>
+                                    <p class="block_time_title">Inicio - Hora local:</p>
+                                    <p class="block_time_local">Mar, 30 de Jun - 18:00</p>
+                                    <p class="block_time_title">Fin - Hora local:</p>
+                                    <p class="block_time_local">Mar, 30 de Jun - 19:00</p>
+                                </div>
+                            </div>
+                            <p class="block_time"><a href="pokemonkricketot.html">VER HORARIOS...</a></p>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="main_title">EVENTOS DE JULIO</h2>
+                <div class="block_overlay background_raid_zekrom">
+                    <div class="block_back">
+                        <h2 class="block_title">Hora legendaria de Zekrom</h2>
+                        <div class="block_info">
+                            <div>
+                                <div class="block_img raid_zekrom"">
+                                </div>
+                                <div>
+                                    <p class="block_time_title">Inicio - Hora local:</p>
+                                    <p class="block_time_local">Mie, 1 de Jul - 18:00</p>
+                                    <p class="block_time_title">Fin - Hora local:</p>
+                                    <p class="block_time_local">Mie, 1 de Jul - 19:00</p>
+                                </div>
+                            </div>
+                            <p class="block_time"><a href="raidhourzekrom3.html">VER HORARIOS...</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block_overlay background_temporada2_final" id="temp2final">
+                    <div class="block_back">
+                        <h2 class="block_title">Liga Combates GO Temp.02 - Final</h2>
+                        <div class="block_info">
+                            <div>
+                                <div class="block_img temporada2_final">
+                                </div>
+                                <div>
+                                    <p class="block_time_title">Inicio:<button class="button_view">Ver +</button></p>
+                                    <p class="block_time_local" id="time_local_start_10">Obteniendo datos...</p>
+                                    <p class="block_time_title">Fin:</p>
+                                    <p class="block_time_local" id="time_local_end_10">Obteniendo datos...</p>
+                                </div>
+                            </div>
+                            <p class="block_time" id="time_10">Obteniendo datos...</p>
+                        </div>
+                    </div>
+                    <div class="block_country">
+                        <div class="country">
+                            <img src="imagen/infografia_liga_final_fecha.jpg" alt="">
+                            <img src="imagen/infografia_liga_temp2_novedades.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="block_overlay background_temporada3_super" id="temp3super">
+                    <div class="block_back">
+                        <h2 class="block_title">Liga Combates GO Temp.03 - Super</h2>
+                        <div class="block_info">
+                            <div>
+                                <div class="block_img temporada3_super">
+                                </div>
+                                <div>
+                                    <p class="block_time_title">Inicio:<button class="button_view">Ver +</button></p>
+                                    <p class="block_time_local" id="time_local_start_12">Obteniendo datos...</p>
+                                    <p class="block_time_title">Fin:</p>
+                                    <p class="block_time_local" id="time_local_end_12">Obteniendo datos...</p>
+                                </div>
+                            </div>
+                            <p class="block_time" id="time_12">Obteniendo datos...</p>
+                        </div>
+                    </div>
+                    <div class="block_country">
+                        <div class="country">
+                            <img src="imagen/infografia_liga_temp3_fecha.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="block_overlay background_community_day">
+                    <div class="block_back">
+                        <h2 class="block_title">Día de la Comunidad de Julio - Gastly</h2>
+                        <div class="block_info">
+                            <div>
+                                <div class="block_img gastly">
+                                </div>
+                                <div>
+                                    <p class="block_time_title">Inicio - Hora local:</p>
+                                    <p class="block_time_local">POR CONFIRMAR</p>
+                                    <p class="block_time_title">Fin - Hora local:</p>
+                                    <p class="block_time_local">POR CONFIRMAR</p>
+                                </div>
+                            </div>
+                            <p class="block_time"><a>MÁS INFORMACIÓN PRONTO...</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block_overlay background_pokefest_2020">
+                    <div class="block_back">
+                        <h2 class="block_title">Pokémon GO Fest 2020</h2>
+                        <div class="block_info">
+                            <div>
+                                <div class="block_img pokefest_2020"">
+                                </div>
+                                <div>
+                                    <p class="block_time_title">Inicio:<button class="button_view">Ver +</button></p>
+                                    <p class="block_time_local">Sab, 25 de Julio</p>
+                                    <p class="block_time_title">Fin:</p>
+                                    <p class="block_time_local">Dom, 26 de Julio</p>
+                                </div>
+                            </div>
+                            <p class="block_time"><a>MÁS INFORMACIÓN PRONTO...</a></p>
+                        </div>
+                        <div class="block_country">
+                            <div class="country">
+                                <div>
+                                    <p> 
+                                        <b>Pokémon GO Fest 2020: una experiencia de evento virtual completamente reinventada llega los días 25 y 26 de julio</b><br><br>
+                                        Entrenadores: <br>
+                                        Este año, te ofrecemos una experiencia totalmente reinventada de Pokémon GO Fest. Reserva los días: 25 y 26 de julio. El Pokémon GO Fest 2020 se celebrará íntegramente en un evento mundial de forma virtual, lo que permitirá a los Entrenadores de todo el mundo participar desde dondequiera que jueguen. También por primera vez, todos los titulares de entradas podrán asistir los dos días del evento.<br><br>
+                                        Aunque echaremos de menos la tradicional reunión de fans de Pokémon GO, estaremos encantados de llevar una experiencia especial de Pokémon GO Fest directamente a la comodidad de tu casa. Pero jugar en casa no implica hacerlo solo. No solo tú podrás disfrutar de un fin de semana de bonus, encuentros con Pokémon e investigaciones especiales, también habrá increíbles formas de conectar con otros Entrenadores y disfrutar de sorpresas divertidas durante todo el verano.<br><br>
+                                    </p>
+                                </div>
+                                <img src="imagen/infografia_pokefest_2020.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="information">
+                <h2 class="information_title"><span>NOTICIAS POKEMON GO</span></h2>
+                <div class="information_block">
+                    <div class="information_notice">
+                        <p>29/05/2020</p>
+                        <p><a href="https://pokemongolive.com/es/post/jun2020-events/" target="_blank">¡Junio nos trae el debut de Zekrom en Pokémon GO y mucho más!</a></p>
+                    </div> 
+                    <div class="information_notice">
+                        <p>27/05/2020</p>
+                        <p><a href="https://pokemongolive.com/es/post/pokemongofest2020/" target="_blank">Pokémon GO Fest 2020: una experiencia de evento virtual completamente reinventada llega los días 25 y 26 de julio</a></p>
+                    </div>
+                    <div class="information_notice">
+                        <p>26/05/2020</p>
+                        <p><a href="https://pokemongolive.com/es/post/realityblending-announcement/" target="_blank">Lanzamiento limitado de las funciones Integrar realidad y Escaneo de Poképaradas a la funcionalidad de RA en algunos teléfonos</a></p>
+                    </div>
+                    <div class="information_notice">
+                        <p>22/05/2020</p>
+                        <p><a href="https://pokemongolive.com/es/post/globaldowntime-jun2020/" target="_blank">Pokémon GO estará inactivo el lunes 1 de junio de 2020 desde las 20:00 hasta las 2:00 CEST (11:00 a 17:00 PDT)</a></p>
+                    </div>
+                    <div class="information_notice">
+                        <p>20/05/2020</p>
+                        <p><a href="https://pokemongolive.com/es/post/throwbackchallengechampion-2020/" target="_blank">Investigación especial del Desafío Retorno 2020: ¡superad el desafío con nota!</a></p>
+                    </div>
+                    <div class="information_notice">
+                        <p>19/05/2020</p>
+                        <p><a href="https://pokemongolive.com/es/post/reshiram-zekrom-kyurem-raids/" target="_blank">¡La élite legendaria de Teselia, Reshiram, Zekrom y Kyurem, llega a las incursiones de cinco estrellas!</a></p>
+                    </div>
+                    <div class="information_notice">
+                        <p>18/05/2020</p>
+                        <p><a href="https://pokemongolive.com/es/post/communityday-junjuly2020/" target="_blank">¡La votación del Día de la Comunidad ha vuelto! ¿Qué Pokémon elegirás para protagonizar los Días de la Comunidad de junio y julio?</a></p>
+                    </div>
+                    <div class="information_notice">
+                        <p>18/05/2020</p>
+                        <p><a href="https://pokemongolive.com/es/post/uniqlo-collaboration/" target="_blank">¡Aterrizan las camisetas para el avatar de la colección UNIQLO UT With Pokémon en Pokémon GO!</a></p>
+                    </div>
+                    <p class="information_more">Más noticias sobre Pokémon GO, ingrese <a href="https://pokemongolive.com/es/post/" target="_blank">aquí</a></p>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div>
+                <p class="footer_info">¿Quieres coordenadas 100IV y más?, entonces únete a Comunidad Fly Oficial:</p>
+                <a href="https://discord.gg/ZEuPKNS" class="footer_discord-logo" target="_blank"><img src="imagen/discord_logo.png" alt="Discord"></a>
+            </div>
+            <div>
+                <p class="footer_info">No te pierdas ningún video de DjKire, sobre el mundo de Pókemon GO:</p>
+                <div class="footer_social">
+                    <a href="https://www.youtube.com/channel/UCfSjGKwQuacobaZWUUKAsYw" class="footer_sociallogo" target="_blank"><img src="imagen/logo_youtube.png" alt="Youtube"></a>
+                    <a href="https://www.facebook.com/DjkireYoutube/" class="footer_sociallogo" target="_blank"><img src="imagen/logo_facebook.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/djkireyoutube/" class="footer_sociallogo" target="_blank"><img src="imagen/logo_instagram.png" alt="Instagram"></a>
+                    <a href="https://twitter.com/DjkireYoutube" class="footer_sociallogo" target="_blank"><img src="imagen/logo_twitter.png" alt="Twitter"></a>
+                </div>
+            </div>
+            <div>
+                <p style="color:sandybrown; font-size: .8em;margin-top: .7em;">Visitante N°</p>
+                <img src="https://counter4.stat.ovh/private/contadorvisitasgratis.php?c=cdltdn4r5de9234tlszgjmje1l5kkbda" style="display: block;margin: 0 auto;">
+            </div>
+            <p style="color: white;margin-top: 1em;font-size: .7em;">©2020 Comunidad Fly Oficial</p>
+            <p class="footer_creator">Desarrollado por: Ro Bert/JessicaNLover</p>
+        </footer>
+        <div class="social_bar">
+            <div>
+                <img class="social_bar_img" src="imagen/logo_comunidad.png" alt="ComunidadFly Oficial">
+            </div>
+            <a href="https://discord.gg/ZEuPKNS" target="_blank"><img src="imagen/discord.svg" alt="Discord" class="social_bar_discord"></a>
+            <a href="https://www.facebook.com/DjkireYoutube/" target="_blank"><img src="imagen/facebook.svg" alt="Facebook" class="social_bar_facebook"></a>
+            <a href="https://twitter.com/DjkireYoutube" target="_blank"><img src="imagen/twitter.svg" alt="Twitter" class="social_bar_twitter"></a>
+            <a href="https://www.instagram.com/djkireyoutube/" target="_blank"><img src="imagen/instagram.svg" alt="Instagram" class="social_bar_instagram"></a>
+            <a href="https://www.youtube.com/channel/UCfSjGKwQuacobaZWUUKAsYw" target="_blank"><img src="imagen/logo_youtube.png" alt="YouTube" class="social_bar_youtube"></a>
+        </div>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+</html>
