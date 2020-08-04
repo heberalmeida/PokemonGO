@@ -149,8 +149,8 @@ const countdown = (timeFormatStart,timeFormatEnd,elem,local_our) => {
 
 const startRaidHour = 18,
   endRaidHour = startRaidHour + 1,
-  startDayRaid = "Tue Jun 23 2020",
-  endDayRaid = "Tue Jun 23 2020";
+  startDayRaid = "Tue Ago 4 2020",
+  endDayRaid = "Tue Ago 4 2020";
 
 countdown(`${startDayRaid} ${startRaidHour}:00:00 GMT+1400`,`${endDayRaid} ${endRaidHour}:00:00 GMT+1400`,"time_1","time_local_our_1");
 countdown(`${startDayRaid} ${startRaidHour}:00:00 GMT+1200`,`${endDayRaid} ${endRaidHour}:00:00 GMT+1200`,"time_2","time_local_our_2");
